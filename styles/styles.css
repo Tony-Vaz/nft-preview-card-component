@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%);
+}
+
+*,*::before,*::after,html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue-main);
+}
+
+.small-marging{margin-bottom: 8px;}
+.medium-marging{margin-bottom: 16px;}
+.large-marging{margin-bottom: 32px;}
+
+.card-container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 20%;
+    background-color: var(--very-dark-blue-card);
+    border-radius: 16px;
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 16px;
+}
+
+.card__image{
+    width: 100%;
+    height: 60%;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.card__header{
+    color: var(--white);
+    font-weight: 600;
+}
+
+.card__paragraph{
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.card__paragraph--inline{
+    display: inline;
+}
+
+.paragraph-blue{
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.align-svg{
+    vertical-align: sub;
+    margin-right: 8px;
+}
+
+.secondary-description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__separator{
+    background-color: var(--very-dark-blue-line);
+    height: 1px;
+    border: none;
+}
+
+.avatar-section{
+    display: flex;
+}
+
+.avatar__circle__container{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    margin-right: 12px;
+}
+
+.avatar__picture{
+    width: 100%;
+    height: 100%;
+}
+
+.link{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.attribution{
+    text-align: center;
+    color: white;
+}
